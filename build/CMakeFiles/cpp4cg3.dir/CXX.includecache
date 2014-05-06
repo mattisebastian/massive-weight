@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/matti/projects/cpp4cg3/main312.cpp
+stdafx.h
+/home/matti/projects/cpp4cg3/stdafx.h
+GL/freeglut.h
+/home/matti/projects/cpp4cg3/GL/freeglut.h
+
+/home/matti/projects/cpp4cg3/stdafx.h
+stdio.h
+-
+stdlib.h
+-
+cmath
+-
+iostream
+-
+

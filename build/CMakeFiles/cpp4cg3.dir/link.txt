@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/cpp4cg3.dir/main312.cpp.o  -o cpp4cg3 -rdynamic -lGLU -lGL -lSM -lICE -lX11 -lXext -lglut -lXmu -lXi 
