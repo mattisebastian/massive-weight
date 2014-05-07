@@ -52,37 +52,62 @@ include CMakeFiles/cpp4cg3.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cpp4cg3.dir/flags.make
 
-CMakeFiles/cpp4cg3.dir/main312.cpp.o: CMakeFiles/cpp4cg3.dir/flags.make
-CMakeFiles/cpp4cg3.dir/main312.cpp.o: ../main312.cpp
+CMakeFiles/cpp4cg3.dir/main32.cpp.o: CMakeFiles/cpp4cg3.dir/flags.make
+CMakeFiles/cpp4cg3.dir/main32.cpp.o: ../main32.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg3/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cpp4cg3.dir/main312.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cpp4cg3.dir/main312.cpp.o -c /home/matti/projects/cpp4cg3/main312.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cpp4cg3.dir/main32.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cpp4cg3.dir/main32.cpp.o -c /home/matti/projects/cpp4cg3/main32.cpp
 
-CMakeFiles/cpp4cg3.dir/main312.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp4cg3.dir/main312.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg3/main312.cpp > CMakeFiles/cpp4cg3.dir/main312.cpp.i
+CMakeFiles/cpp4cg3.dir/main32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp4cg3.dir/main32.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg3/main32.cpp > CMakeFiles/cpp4cg3.dir/main32.cpp.i
 
-CMakeFiles/cpp4cg3.dir/main312.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp4cg3.dir/main312.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg3/main312.cpp -o CMakeFiles/cpp4cg3.dir/main312.cpp.s
+CMakeFiles/cpp4cg3.dir/main32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp4cg3.dir/main32.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg3/main32.cpp -o CMakeFiles/cpp4cg3.dir/main32.cpp.s
 
-CMakeFiles/cpp4cg3.dir/main312.cpp.o.requires:
-.PHONY : CMakeFiles/cpp4cg3.dir/main312.cpp.o.requires
+CMakeFiles/cpp4cg3.dir/main32.cpp.o.requires:
+.PHONY : CMakeFiles/cpp4cg3.dir/main32.cpp.o.requires
 
-CMakeFiles/cpp4cg3.dir/main312.cpp.o.provides: CMakeFiles/cpp4cg3.dir/main312.cpp.o.requires
-	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/main312.cpp.o.provides.build
-.PHONY : CMakeFiles/cpp4cg3.dir/main312.cpp.o.provides
+CMakeFiles/cpp4cg3.dir/main32.cpp.o.provides: CMakeFiles/cpp4cg3.dir/main32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/main32.cpp.o.provides.build
+.PHONY : CMakeFiles/cpp4cg3.dir/main32.cpp.o.provides
 
-CMakeFiles/cpp4cg3.dir/main312.cpp.o.provides.build: CMakeFiles/cpp4cg3.dir/main312.cpp.o
+CMakeFiles/cpp4cg3.dir/main32.cpp.o.provides.build: CMakeFiles/cpp4cg3.dir/main32.cpp.o
+
+CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o: CMakeFiles/cpp4cg3.dir/flags.make
+CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o: ../controller/glut_engine.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg3/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o -c /home/matti/projects/cpp4cg3/controller/glut_engine.cpp
+
+CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg3/controller/glut_engine.cpp > CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.i
+
+CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg3/controller/glut_engine.cpp -o CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.s
+
+CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o.requires:
+.PHONY : CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o.requires
+
+CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o.provides: CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o.provides.build
+.PHONY : CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o.provides
+
+CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o.provides.build: CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o
 
 # Object files for target cpp4cg3
 cpp4cg3_OBJECTS = \
-"CMakeFiles/cpp4cg3.dir/main312.cpp.o"
+"CMakeFiles/cpp4cg3.dir/main32.cpp.o" \
+"CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o"
 
 # External object files for target cpp4cg3
 cpp4cg3_EXTERNAL_OBJECTS =
 
-cpp4cg3: CMakeFiles/cpp4cg3.dir/main312.cpp.o
+cpp4cg3: CMakeFiles/cpp4cg3.dir/main32.cpp.o
+cpp4cg3: CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o
 cpp4cg3: CMakeFiles/cpp4cg3.dir/build.make
 cpp4cg3: /usr/lib64/libGLU.so
 cpp4cg3: /usr/lib64/libGL.so
@@ -101,7 +126,8 @@ cpp4cg3: CMakeFiles/cpp4cg3.dir/link.txt
 CMakeFiles/cpp4cg3.dir/build: cpp4cg3
 .PHONY : CMakeFiles/cpp4cg3.dir/build
 
-CMakeFiles/cpp4cg3.dir/requires: CMakeFiles/cpp4cg3.dir/main312.cpp.o.requires
+CMakeFiles/cpp4cg3.dir/requires: CMakeFiles/cpp4cg3.dir/main32.cpp.o.requires
+CMakeFiles/cpp4cg3.dir/requires: CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o.requires
 .PHONY : CMakeFiles/cpp4cg3.dir/requires
 
 CMakeFiles/cpp4cg3.dir/clean:

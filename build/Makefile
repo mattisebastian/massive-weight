@@ -114,29 +114,53 @@ cpp4cg3/fast:
 	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/build
 .PHONY : cpp4cg3/fast
 
-main312.o: main312.cpp.o
-.PHONY : main312.o
+controller/glut_engine.o: controller/glut_engine.cpp.o
+.PHONY : controller/glut_engine.o
 
 # target to build an object file
-main312.cpp.o:
-	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/main312.cpp.o
-.PHONY : main312.cpp.o
+controller/glut_engine.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o
+.PHONY : controller/glut_engine.cpp.o
 
-main312.i: main312.cpp.i
-.PHONY : main312.i
+controller/glut_engine.i: controller/glut_engine.cpp.i
+.PHONY : controller/glut_engine.i
 
 # target to preprocess a source file
-main312.cpp.i:
-	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/main312.cpp.i
-.PHONY : main312.cpp.i
+controller/glut_engine.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.i
+.PHONY : controller/glut_engine.cpp.i
 
-main312.s: main312.cpp.s
-.PHONY : main312.s
+controller/glut_engine.s: controller/glut_engine.cpp.s
+.PHONY : controller/glut_engine.s
 
 # target to generate assembly for a file
-main312.cpp.s:
-	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/main312.cpp.s
-.PHONY : main312.cpp.s
+controller/glut_engine.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.s
+.PHONY : controller/glut_engine.cpp.s
+
+main32.o: main32.cpp.o
+.PHONY : main32.o
+
+# target to build an object file
+main32.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/main32.cpp.o
+.PHONY : main32.cpp.o
+
+main32.i: main32.cpp.i
+.PHONY : main32.i
+
+# target to preprocess a source file
+main32.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/main32.cpp.i
+.PHONY : main32.cpp.i
+
+main32.s: main32.cpp.s
+.PHONY : main32.s
+
+# target to generate assembly for a file
+main32.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/main32.cpp.s
+.PHONY : main32.cpp.s
 
 # Help Target
 help:
@@ -147,9 +171,12 @@ help:
 	@echo "... cpp4cg3"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main312.o"
-	@echo "... main312.i"
-	@echo "... main312.s"
+	@echo "... controller/glut_engine.o"
+	@echo "... controller/glut_engine.i"
+	@echo "... controller/glut_engine.s"
+	@echo "... main32.o"
+	@echo "... main32.i"
+	@echo "... main32.s"
 .PHONY : help
 
 

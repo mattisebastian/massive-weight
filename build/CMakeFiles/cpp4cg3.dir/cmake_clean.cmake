@@ -1,5 +1,6 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/cpp4cg3.dir/main312.cpp.o"
+  "CMakeFiles/cpp4cg3.dir/main32.cpp.o"
+  "CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o"
   "cpp4cg3.pdb"
   "cpp4cg3"
 )

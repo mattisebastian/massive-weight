@@ -1,10 +1,14 @@
+
+namespace controller{
+
 class Engine
 {
 public:
-    virtual ~Engine() {}
-    init(int argc, char ** argv){ };
-    run(){};
+    virtual ~Engine() {};
+    virtual void init(int argc, char ** argv) = 0;
+    virtual void run() = 0;
   
   
 };
     
+} // controller namespace

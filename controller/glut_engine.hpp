@@ -1,20 +1,22 @@
+#ifndef GLUT_ENGINE_HPP
+#define GLUT_ENGINE_HPP
+
 #include "engine.hpp"
 #include <GL/freeglut.h>
-#include ../"stdafx.h"
+#include <iostream>
 
-void init(int argc, char* argv[]){
+namespace controller{
 
-    // Todo: check ob Init ausgeführt
-    glutInit(&argc, argv);
-    glutSetOption(GLUT_ACTION_ON_WINDOW_CLOSE, GLUT_ACTION_GLUTMAINLOOP_RETURNS);
-    
-    // Erfolgreiche Initialisierung
-    
-    std::cout << "GlutEngine::init: checkpoint" << std::endl;
-}
+class GlutEngine : public Engine{
+  
+    public :
+	
+	GlutEngine() = default;
+	virtual void init(int argc, char* argv[]) override;
+	virtual void run() override;
+  
+};
 
-void run(){
-    // Todo: auf erfolgten Init testen
-    std::cout << "GlutEngine::run: checkpoint" << std::endl;
-    glutMainLoop();
-}
+} // controller namespace
+
+#endif /* GLUT_ENGINE_HPP */

@@ -6,11 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/matti/projects/cpp4cg3/main312.cpp
-stdafx.h
+/home/matti/projects/cpp4cg3/controller/engine.hpp
+
+/home/matti/projects/cpp4cg3/controller/glut_engine.cpp
+../stdafx.h
 /home/matti/projects/cpp4cg3/stdafx.h
 GL/freeglut.h
-/home/matti/projects/cpp4cg3/GL/freeglut.h
+/home/matti/projects/cpp4cg3/controller/GL/freeglut.h
+glut_engine.hpp
+/home/matti/projects/cpp4cg3/controller/glut_engine.hpp
+
+/home/matti/projects/cpp4cg3/controller/glut_engine.hpp
+engine.hpp
+/home/matti/projects/cpp4cg3/controller/engine.hpp
+GL/freeglut.h
+-
+iostream
+-
 
 /home/matti/projects/cpp4cg3/stdafx.h
 stdio.h

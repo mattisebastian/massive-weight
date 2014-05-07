@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = /home/matti/projects/cpp4cg3/build
 CMakeFiles/cpp4cg3.dir/all:
 	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/depend
 	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg3/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg3/build/CMakeFiles  1 2
 	@echo "Built target cpp4cg3"
 .PHONY : CMakeFiles/cpp4cg3.dir/all
 
@@ -72,7 +72,7 @@ all: CMakeFiles/cpp4cg3.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cpp4cg3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/matti/projects/cpp4cg3/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matti/projects/cpp4cg3/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cpp4cg3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/matti/projects/cpp4cg3/build/CMakeFiles 0
 .PHONY : CMakeFiles/cpp4cg3.dir/rule

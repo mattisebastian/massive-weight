@@ -4,7 +4,8 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/matti/projects/cpp4cg3/main312.cpp" "/home/matti/projects/cpp4cg3/build/CMakeFiles/cpp4cg3.dir/main312.cpp.o"
+  "/home/matti/projects/cpp4cg3/controller/glut_engine.cpp" "/home/matti/projects/cpp4cg3/build/CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o"
+  "/home/matti/projects/cpp4cg3/main32.cpp" "/home/matti/projects/cpp4cg3/build/CMakeFiles/cpp4cg3.dir/main32.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
