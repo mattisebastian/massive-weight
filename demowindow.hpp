@@ -3,15 +3,18 @@
 
 #include "window.hpp"
 
+namespace view {
 
-class DemoWindow :  view::Window
+class DemoWindow : public Window
 {
 public:
-    
-    DemoWindow();
-    ~DemoWindow();
+    DemoWindow(int width, int height, const std::string& name ) : Window(width, height, name) {}
 private:
-    virtual bool display();
+    bool display() override;
+    void reshape();
+    void keyboard(unsigned int key);
 };
+
+} // end view::
 
 #endif // DEMOWINDOW_H

@@ -18,19 +18,28 @@
 #include "demowindow.hpp"
 #include <GL/gl.h>
 
-DemoWindow::DemoWindow(int width, int height, const std::string& name ) : Window(width,height,name )
+using namespace view;
+
+
+// DemoWindow::DemoWindow(int width, int height, const std::string& name ) : Window(width,height,name )
+// {
+//     
+// }
+
+
+void DemoWindow::reshape() 
+{}
+
+void DemoWindow::keyboard(unsigned int key)
 {
-    
+    view::Window::keyboard(key);
 }
 
-DemoWindow::~DemoWindow()
-{
-
-}
-
-DemoWindow::display()
+bool DemoWindow::display()
 {
     glClearColor(0.1f, 0.2f, 0.3f, 1.0f);
     glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
+    
+    return true;
 }
 

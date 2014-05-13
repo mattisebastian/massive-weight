@@ -10,7 +10,7 @@ class Window
 public:
     //keine Ahnung was size_t soll, in int geändert
     Window(int width, int height, const std::string& name );
-    ~Window() = default;
+    //~Window() = default;
     unsigned int width() const;
     unsigned int height() const;
     void setWidth(unsigned int w) {_width = w;}

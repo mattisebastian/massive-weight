@@ -1,36 +1,36 @@
 #include "../stdafx.h"
 #include "GL/freeglut.h"
-#include <stdexcept>
 #include <memory>
 #include "glut_engine.hpp"
 #include "../window.hpp"
+#include "../demowindow.hpp"
 
 namespace controller {
 /*
 controller::GlutEngine::GlutEngine()
 {}*/
 
-void display() {
-    glClearColor(0.0f, 0.0f, 1.0f, 0.7f);
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    glutSwapBuffers();
-
-}
-
-void keyboard(unsigned char key, int x, int y) {
-    if(key == 113) {
-        printf("destroyed!!\n");
-        glutDestroyWindow(1);
-        glutLeaveMainLoop();
-
-    }
-}
-
-void reshape(int width, int height) {
-
-    /* Ich bin nicht sicher, was das tut! */
-    glViewport(0,0,width,height);
-}
+// void display() {
+//     glClearColor(1.0f, 1.0f, 1.0f, 0.7f);
+//     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+//     glutSwapBuffers();
+// 
+// }
+// 
+// void keyboard(unsigned char key, int x, int y) {
+//     if(key == 113) {
+//         printf("destroyed!!\n");
+//         glutDestroyWindow(1);
+//         glutLeaveMainLoop();
+// 
+//     }
+// }
+// 
+// void reshape(int width, int height) {
+// 
+//     /* Ich bin nicht sicher, was das tut! */
+//     glViewport(0,0,width,height);
+// }
 
 
 void GlutEngine::init(int argc, char* argv[]) {
@@ -57,10 +57,12 @@ void GlutEngine::init(int argc, char* argv[]) {
 
 void controller::GlutEngine::run()
 {
-    std::shared_ptr< view::Window > window( new view::Window( 500,500, "cpp4cg3-window" ));
-    //std::shared_ptr< view::Window > window2( new view::Window( 400,400, "cpp4cg3-window-2" ));
-
+    std::shared_ptr< view::DemoWindow >window;
+    //std::shared_ptr< view::Window > window2;
     
+    window = std::make_shared<view::DemoWindow>( 500,500, "cpp4cg3-window");
+    //window2 = std::make_shared<view::Window>( 500,500, "cpp4cg3-window---2");
+    glutMainLoop();
    
 }
 
