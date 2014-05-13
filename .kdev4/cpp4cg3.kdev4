@@ -34,3 +34,9 @@ Project Target=cpp4cg3,cpp4cg3
 Use External Terminal=false
 Working Directory=
 isExecutable=false
+
+[Project]
+VersionControlSupport=kdevgit
+
+[SourceFileTemplates]
+LastUsedTemplate=/home/matti/.kde4/share/apps/kdevfiletemplates/template_descriptions/cpp_basic.desktop

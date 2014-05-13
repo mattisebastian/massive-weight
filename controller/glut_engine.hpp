@@ -17,6 +17,11 @@ class GlutEngine : public Engine{
   
 };
 
+void display();
+void keyboard(unsigned char key, int x, int y);
+void reshape(int width, int height);
+
+
 } // controller namespace
 
 #endif /* GLUT_ENGINE_HPP */

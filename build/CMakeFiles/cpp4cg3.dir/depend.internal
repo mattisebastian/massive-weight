@@ -6,7 +6,12 @@ CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o
  /home/matti/projects/cpp4cg3/controller/glut_engine.cpp
  /home/matti/projects/cpp4cg3/controller/glut_engine.hpp
  /home/matti/projects/cpp4cg3/stdafx.h
+ /home/matti/projects/cpp4cg3/window.hpp
 CMakeFiles/cpp4cg3.dir/main32.cpp.o
  /home/matti/projects/cpp4cg3/controller/engine.hpp
  /home/matti/projects/cpp4cg3/controller/glut_engine.hpp
  /home/matti/projects/cpp4cg3/main32.cpp
+CMakeFiles/cpp4cg3.dir/window.cpp.o
+ /home/matti/projects/cpp4cg3/stdafx.h
+ /home/matti/projects/cpp4cg3/window.cpp
+ /home/matti/projects/cpp4cg3/window.hpp

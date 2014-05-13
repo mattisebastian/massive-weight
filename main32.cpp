@@ -1,12 +1,13 @@
 #include "controller/glut_engine.hpp"
-#include <tr1/memory>
+#include <memory>
 
 int main( int argc, char** argv )
 {
-std::tr1::shared_ptr < controller::Engine > game_engine ( new controller::GlutEngine );
-game_engine -> init( argc, argv);
-game_engine -> run();
+    std::shared_ptr < controller::Engine > game_engine ( new controller::GlutEngine );
+    
+    game_engine -> init( argc, argv);
+    game_engine -> run();
+    
 
-
-return 0;
+    return 0;
 }

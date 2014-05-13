@@ -162,6 +162,30 @@ main32.cpp.s:
 	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/main32.cpp.s
 .PHONY : main32.cpp.s
 
+window.o: window.cpp.o
+.PHONY : window.o
+
+# target to build an object file
+window.cpp.o:
+	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/window.cpp.o
+.PHONY : window.cpp.o
+
+window.i: window.cpp.i
+.PHONY : window.i
+
+# target to preprocess a source file
+window.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/window.cpp.i
+.PHONY : window.cpp.i
+
+window.s: window.cpp.s
+.PHONY : window.s
+
+# target to generate assembly for a file
+window.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp4cg3.dir/build.make CMakeFiles/cpp4cg3.dir/window.cpp.s
+.PHONY : window.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -177,6 +201,9 @@ help:
 	@echo "... main32.o"
 	@echo "... main32.i"
 	@echo "... main32.s"
+	@echo "... window.o"
+	@echo "... window.i"
+	@echo "... window.s"
 .PHONY : help
 
 

@@ -6,24 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/matti/projects/cpp4cg3/controller/engine.hpp
-
-/home/matti/projects/cpp4cg3/controller/glut_engine.cpp
-../stdafx.h
-/home/matti/projects/cpp4cg3/stdafx.h
-GL/freeglut.h
-/home/matti/projects/cpp4cg3/controller/GL/freeglut.h
-glut_engine.hpp
-/home/matti/projects/cpp4cg3/controller/glut_engine.hpp
-
-/home/matti/projects/cpp4cg3/controller/glut_engine.hpp
-engine.hpp
-/home/matti/projects/cpp4cg3/controller/engine.hpp
-GL/freeglut.h
--
-iostream
--
-
 /home/matti/projects/cpp4cg3/stdafx.h
 stdio.h
 -
@@ -32,5 +14,19 @@ stdlib.h
 cmath
 -
 iostream
+-
+
+/home/matti/projects/cpp4cg3/window.cpp
+window.hpp
+/home/matti/projects/cpp4cg3/window.hpp
+stdafx.h
+/home/matti/projects/cpp4cg3/stdafx.h
+GL/freeglut_std.h
+-
+GL/freeglut_ext.h
+-
+
+/home/matti/projects/cpp4cg3/window.hpp
+string
 -
 

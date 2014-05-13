@@ -6,6 +6,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/matti/projects/cpp4cg3/controller/glut_engine.cpp" "/home/matti/projects/cpp4cg3/build/CMakeFiles/cpp4cg3.dir/controller/glut_engine.cpp.o"
   "/home/matti/projects/cpp4cg3/main32.cpp" "/home/matti/projects/cpp4cg3/build/CMakeFiles/cpp4cg3.dir/main32.cpp.o"
+  "/home/matti/projects/cpp4cg3/window.cpp" "/home/matti/projects/cpp4cg3/build/CMakeFiles/cpp4cg3.dir/window.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

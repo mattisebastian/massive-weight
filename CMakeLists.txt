@@ -8,9 +8,9 @@ find_package(GLUT REQUIRED)
 
 include_directories(${OPENGL_INCLUDE_DIR} ${GLUT_INCLUDE_DIRS} )
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --std=c++11 -Wall -pedantic")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --std=c++11 -Wall -Werror -pedantic")
 
-add_executable(cpp4cg3 main32.cpp controller/glut_engine.cpp)
+add_executable(cpp4cg3 demowindow.cpp main32.cpp controller/glut_engine.cpp window.cpp)
 
 target_link_libraries(cpp4cg3 ${OPENGL_LIBRARIES} ${GLUT_LIBRARIES} )
 
