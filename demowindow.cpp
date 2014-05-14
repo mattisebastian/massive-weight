@@ -39,14 +39,14 @@ bool DemoWindow::display()
     milliseconds duration= std::chrono::duration_cast<milliseconds>(t2 - tStart);
     
     
-    angle = angle + duration.count() * 0.072f;
+    angle = duration.count() * 0.072f;
     
     if(angle > 360){
 	angle = 0;
 	
     }
     
-    tStart = t2;
+    //tStart = t2;
     
     // Rotation
     glRotatef(angle, 0, 0, 1);
