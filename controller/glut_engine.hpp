@@ -7,14 +7,19 @@
 
 namespace controller{
 
+   
+    
 class GlutEngine : public Engine{
-  
+    
+    
+    
     public :
 	
 	GlutEngine() = default;
 	virtual void init(int argc, char* argv[]) override;
 	virtual void run() override;
   
+
 };
 
 void display();

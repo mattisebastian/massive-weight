@@ -2,15 +2,17 @@
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include <GL/freeglut_std.h>
+#include <string>
+
 
 using namespace view;
 
 
-void DemoWindow::reshape() 
-{
-    
-    
-}
+// void DemoWindow::reshape() 
+// {
+//     
+//     
+// }
 
 
 
@@ -32,9 +34,22 @@ bool DemoWindow::display()
     
     gluLookAt(0, -7, 0, 0, 0, 0, 0, 0, 1);
     
+    view::Clock::time_point t2 = view::Clock::now();
+    
+    milliseconds duration= std::chrono::duration_cast<milliseconds>(t2 - tStart);
+    
+    
+    angle = angle + duration.count() * 0.072f;
+    
+    if(angle > 360){
+	angle = 0;
+	
+    }
+    
+    tStart = t2;
     
     // Rotation
-    glRotatef(30, 0, 0, 1);
+    glRotatef(angle, 0, 0, 1);
     
     glBegin(GL_LINES);
     glColor3f(0.75f, 0.75f, 0.75f);
@@ -86,8 +101,14 @@ bool DemoWindow::display()
     
     glEnd();
     
+    std::string a = "angle";
+    
+    a += " " + std::to_string(angle) + "time: " + std::to_string(duration.count());
+    
+    glutSetWindowTitle(a.c_str());
     
     
-    return true;
+    return true; 
+    //duration.count() < 5.0f;
 }
 

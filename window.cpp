@@ -10,7 +10,8 @@ Window::Window( int width, int height, const std::string& name )
     _name = name;
     _width = width;
     _height = height;
-
+    
+    glutInitWindowSize(_width, _height );
     _glut_win_id = glutCreateWindow(name.c_str());
 
     glutSetWindowData(this);
@@ -58,8 +59,8 @@ bool Window::display()
 }
 void Window::reshape()
 {
-    // nachschauen, was das tut!
-    //glViewport(0,0,width,height);
+    //nachschauen, was das tut!
+    glViewport(0,0,width(),height());
 }
 
 void Window::keyboard(unsigned int key)
@@ -88,9 +89,10 @@ void Window::glutDisplay()
         if (ptr->id() != 0) {
             ptr->ensureCurrent();
             glutSwapBuffers();
-            ptr->display();
-
-
+	    
+	    if(ptr->display())
+	    glutPostRedisplay();
+            
         } else std::cerr << "id ist 0!" << std::endl;
     } else std::cerr<< "nullptr in glutDisplay!" << std::endl;
 
