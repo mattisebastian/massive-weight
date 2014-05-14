@@ -1,44 +1,92 @@
-/*
- * Copyright 2014 <copyright holder> <email>
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- */
-
 #include "demowindow.hpp"
 #include <GL/gl.h>
+#include <GL/glu.h>
+#include <GL/freeglut_std.h>
 
 using namespace view;
 
 
-// DemoWindow::DemoWindow(int width, int height, const std::string& name ) : Window(width,height,name )
-// {
-//     
-// }
-
-
 void DemoWindow::reshape() 
-{}
-
-void DemoWindow::keyboard(unsigned int key)
 {
-    view::Window::keyboard(key);
+    
+    
 }
+
+
 
 bool DemoWindow::display()
 {
     glClearColor(0.1f, 0.2f, 0.3f, 1.0f);
     glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
+    
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    
+    int w = glutGet(GLUT_WINDOW_WIDTH);
+    int h = glutGet(GLUT_WINDOW_HEIGHT);
+    gluPerspective(30, w / h, 2, 20);
+    
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+    
+    
+    gluLookAt(0, -7, 0, 0, 0, 0, 0, 0, 1);
+    
+    
+    // Rotation
+    glRotatef(30, 0, 0, 1);
+    
+    glBegin(GL_LINES);
+    glColor3f(0.75f, 0.75f, 0.75f);
+    
+    // Unterkanten
+    
+    glVertex3i(1, -1, -1);
+    glVertex3i(-1, -1, -1);
+    
+   
+    glVertex3i(-1, -1, -1);
+    glVertex3i(-1, 1, -1);
+    
+    glVertex3i(-1, 1, -1);
+    glVertex3i(1, 1, -1);
+    
+    glVertex3i(1, 1, -1);
+    glVertex3i(1, -1, -1);
+    
+    
+    // Oberkanten
+    
+    glVertex3i(1, -1, 1);
+    glVertex3i(-1, -1, 1);
+    
+    glVertex3i(-1, -1, 1);
+    glVertex3i(-1, 1, 1);
+    
+    glVertex3i(-1, 1, 1);
+    glVertex3i(1, 1, 1);
+    
+    glVertex3i(1, 1, 1);
+    glVertex3i(1, -1, 1);
+    
+    // Seitenkanten
+    
+    glVertex3i(1, -1, -1);
+    glVertex3i(1, -1, 1);
+    
+    glVertex3i(-1, -1, -1);
+    glVertex3i(-1, -1, 1);
+    
+    glVertex3i(-1, 1, -1);
+    glVertex3i(-1, 1, 1);
+    
+    glVertex3i(1, 1, -1);
+    glVertex3i(1, 1, 1);
+    
+    
+    glEnd();
+    
+    
     
     return true;
 }

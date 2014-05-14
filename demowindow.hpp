@@ -12,7 +12,7 @@ public:
 private:
     bool display() override;
     void reshape();
-    void keyboard(unsigned int key);
+//     void keyboard(unsigned int key);
 };
 
 } // end view::
